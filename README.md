@@ -49,3 +49,25 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 
 ## License
 **?**
+
+## Plataforma de Big data e Analytics
+
+** Robôs de Captura de Informações
+
+- [] informações de Empresas
+- [] informações da Bolsa de Valores
+- [] informações de Mídias sociais
+
+** Motor de Ingestão e armazenamento de dados
+
+** Motor de Ciência de dados
+
+- [] Machine Learning 
+- [] Inteligência Artificial
+
+
+
+
+
+
+
