@@ -40,6 +40,7 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 - [ ] Quantidade de pregão negativos.
 - [ ] Pregão que teve maior prejuízo.
 - [ ] Pregão que teve maior lucro.
+- [ ] Acompanhamento de noticias.
 
 **Informe de Rendimento para Imposto de Renda**
 **Patrimônio**
