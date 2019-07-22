@@ -6,14 +6,18 @@ Em geral quem opera **Day Trader** e **Swing Trader** controla os investimentos 
 
 Para faciliar esse controle e tomada de decisões criamos uma solução que  pretende  automatizar  essas tarefas de forma simples e agradável.
 
-## Pré-Requisitos
+## Tecnologias envolvidas
 
-- NodeJS
-- JavaScript ES6
-- ReactJS
+- [x] NodeJS
+- [x] JavaScript ES6
+- [x] ReactJS
+- [x] Python
 
-## API REST
-**?**
+## Back-End
+
+- [x] NodeJs
+
+- [x] Express (Framework)
 
 ## Status
 
@@ -22,9 +26,12 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 - [ ] Definir como será processado.
 - [x] Saída em JSON.
 
-## App WEB
+## App Mobile
+
+### Fase 1
 
 **Layout**
+
 - [ ] Definir layout
 
 **Login**
@@ -45,26 +52,28 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 **Informe de Rendimento para Imposto de Renda**
 **Patrimônio**
 
-## App Mobile
+### Fase 2
+
 **?**
 
 ## License
+
 **?**
 
 ## Plataforma de Big data e Analytics
 
-** Robôs de Captura de Informações
+**Robôs de Captura de Informações **
 
-- [] informações de Empresas
-- [] informações da Bolsa de Valores
-- [] informações de Mídias sociais
+- [ ] informações de Empresas
+- [ ] informações da Bolsa de Valores
+- [ ] informações de Mídias sociais
 
-** Motor de Ingestão e armazenamento de dados
+**Motor de Ingestão e armazenamento de dados**
 
-** Motor de Ciência de dados
+**Motor de Ciência de dados**
 
-- [] Machine Learning 
-- [] Inteligência Artificial
+- [ ] Machine Learning 
+- [ ] Inteligência Artificial
 
 
 
