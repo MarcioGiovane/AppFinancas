@@ -21,7 +21,7 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 
 ## Status
 
-**API REST **
+**API REST**
 - [ ] Definir o que será processado.
 - [ ] Definir como será processado.
 - [x] Saída em JSON.
@@ -62,7 +62,7 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 
 ## Plataforma de Big data e Analytics
 
-**Robôs de Captura de Informações **
+**Robôs de Captura de Informações**
 
 - [ ] informações de Empresas
 - [ ] informações da Bolsa de Valores
