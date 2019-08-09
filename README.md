@@ -11,19 +11,18 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 - [x] NodeJS
 - [x] JavaScript ES6
 - [x] ReactJS
+- [x] React Native
 - [x] Python
 
-## Back-End
+## BackEnd
 
 - [x] NodeJs
-
-- [x] Express (Framework)
 
 ## Status
 
 **API REST**
-- [ ] Definir o que será processado.
-- [ ] Definir como será processado.
+- [X] Definir o que será processado.
+- [X] Definir como será processado.
 - [x] Saída em JSON.
 
 ## App Mobile
