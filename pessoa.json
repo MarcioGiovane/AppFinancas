@@ -1,0 +1,78 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "title": "Pessoa",
+   "description": "Uma Pessoa",
+   "type": "object",
+   "properties":
+   {
+      "idPessoa":
+      {
+         "description": "id de cadastro",
+         "type": "number",
+         "minimum": 0,
+         "maximum": 11
+      },
+      "nome":
+      {
+         "description": "Nome do usuario",
+         "type": "string"
+      },
+      "cpf":
+      {
+         "description": "cpf",
+         "type": "number",
+         "minimum": 11,
+         "maximum": 11
+      },
+      "dataNascimento":
+      {
+         "description": "Data de Nascimento",
+         "type": "string"
+      },
+      "email":
+      {
+         "description": "email",
+         "type": "string"
+      },
+      "corretora":
+      {
+         "description": "corretora",
+         "type": "string"
+      },
+      "sexo":
+      {
+         "description": "sexo",
+         "type": "string"
+      },
+      "tipoInvestimento":
+      {
+         "description": "Tipos de Investimentos",
+         "type": "string"
+      },
+       "endereco": {
+		      "idEndereco":
+				      {
+				         "description": "id de endereco",
+				         "type": "number",
+				         "minimum": 0,
+				         "maximum": 11,
+              "rua": {  
+                        "description": "Rua",
+                        "type": "string"
+                         },
+              "cidade": {  
+                        "description": "Cidade",
+                        "type": "string"
+                         },
+              "Estado": {  
+                        "description": "Estado",
+                        "type": "string"
+                         },
+              "cep": {  
+                        "description": "crp",
+                        "type": "string"
+                         },
+            }                                                                                
+   },
+   "required": ["nome", "cpf","email","tipoinvestimento","corretora","endereco"]
+}
