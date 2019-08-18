@@ -2,11 +2,11 @@
 
 ------
 
-Em geral quem opera **Day Trader** e **Swing Trader** controla os investimentos em planilhas  para colocar o **gain** ou **loss**.
+Em geral quem opera **Day Trader** e **Swing Trader** controla os investimentos em planilhas para colocar o **gain** ou **loss**.
 
-Para faciliar esse controle e tomada de decisões criamos uma solução que  pretende  automatizar  essas tarefas de forma simples e agradável.
+Para faciliar esse controle e tomadas de decisões criamos uma solução que  pretende automatizar essas tarefas de forma simples e agradável.
 
-## Tecnologias envolvidas
+## Tecnologias Envolvidas
 
 - [x] NodeJS
 - [x] JavaScript ES6
@@ -16,30 +16,35 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 
 ## BackEnd
 
-- [x] NodeJs
+- [x] NodeJS
 
-## Status
+**Status**
 
-**API REST**
 - [X] Definir o que será processado.
 - [X] Definir como será processado.
 - [x] Saída em JSON.
+- [x] Fase de Desenvolvimento iniciada.
+- [ ] Fase de Homologação iniciada.
+- [ ] Fase de Produção iniciada.
+
+## WebSite
+
+**Status**
+
+- [ ] Definir Layout de Login
+- [ ] Definir Layout de Cadastro
+- [ ] Definir Layout de Envio de dados
+- [ ] Definir Layout de **gain** ou **loss**.
 
 ## App Mobile
 
-### Fase 1
-
-**Layout**
-
-- [ ] Definir layout
+**Status**
 
 **Login**
 - [ ] E-mail / CPF e Senha.
-
 **Cadastro**
 - [ ] Usuário.(Nome, CPF, e-mail, Corretora e Idade)
 - [ ] Investimento.(Day trader , Swing trader ou Renda Fixa)
-
 **Acompanhamento do progresso do investimento**
 - [ ] Gráficos.
 - [ ] Quantidade de pregão positivos.
@@ -49,15 +54,12 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 - [ ] Acompanhamento de noticias.
 
 **Informe de Rendimento para Imposto de Renda**
+
+- [ ] Enviar por e-mail.
+  
 **Patrimônio**
 
-### Fase 2
-
-**?**
-
-## License
-
-**?**
+- [ ] Enviar por e-mail.
 
 ## Plataforma de Big data e Analytics
 
@@ -73,10 +75,3 @@ Para faciliar esse controle e tomada de decisões criamos uma solução que  pre
 
 - [ ] Machine Learning 
 - [ ] Inteligência Artificial
-
-
-
-
-
-
-
