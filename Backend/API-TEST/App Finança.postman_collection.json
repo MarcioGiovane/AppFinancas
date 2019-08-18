@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "c00ad73e-284e-4545-87d1-9e8a19e87744",
+		"name": "App Finança",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Principal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transação Investimento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"data\": \"20-05-19\",\r\n\t\"ganho\": 18.00,\r\n\t\"contratoMiniIndice\": 1,\r\n\t\"contratoMiniDolar\": 0,\r\n\t\"iss\": 0,\r\n\t\"corretagem\": 0,\r\n\t\"taxaRegistroBmf\": 0.34,\r\n\t\"taxaBmf\": 0.16,\r\n\t\"taxaOutras\": 0\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/invest",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invest"
+					]
+				},
+				"description": "Enviando dados para a API"
+			},
+			"response": []
+		}
+	]
+}
