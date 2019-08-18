@@ -1,0 +1,9 @@
+# Fase Desenvolvimento
+desenvolvimento/node_modules
+
+# Logs do Yarn
+desenvolvimento/yarn-error.log
+desenvolvimento/yarn.lock
+
+# Logs do NPM
+desenvolvimento/package-lock.json
