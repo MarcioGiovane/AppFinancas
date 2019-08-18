@@ -56,6 +56,8 @@ $ npm run dev
 ## Testando a API
 
 **1. Para testar a API usaremos o POSTMAN**
+
 **2. https://www.getpostman.com/downloads/**
+
 **3. Para facilitar os teste na pasta API-TEST import os arquivos**
 
