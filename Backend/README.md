@@ -4,10 +4,11 @@
 
 **Fase Desenvolvimento**
 
-- [x] Estrutura Básica
-- [ ] Enviando dados para criação de novo usuário
+- [x] Estrutura Base da API
+- [x] Enviando dados para criação de novo usuário
 - [ ] Salvando o novo usuário do banco de dados 
 - [ ] Listando todos os usuários do banco
+- [ ] Excluindo usuário
 - [ ] Autenticando o usuário
 - [x] Enviando dados para transação de investimento
 - [ ] Salvando a transação no banco de dados
@@ -59,5 +60,5 @@ $ npm run dev
 
 **2. https://www.getpostman.com/downloads/**
 
-**3. Para facilitar os teste na pasta API-TEST import os arquivos**
+**3. Para facilitar os teste na pasta API-TEST importe os arquivos**
 
