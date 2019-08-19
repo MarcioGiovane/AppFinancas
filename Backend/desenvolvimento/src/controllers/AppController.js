@@ -4,6 +4,6 @@
 
 module.exports = {
   index(req, res) {
-    return res.json({ 'Servidor' : 'OK'});
+    return res.json({ 'Servidor' : 'Running'});
   },
 };

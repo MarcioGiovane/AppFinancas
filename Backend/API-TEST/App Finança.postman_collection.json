@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c00ad73e-284e-4545-87d1-9e8a19e87744",
+		"_postman_id": "ebda7bbe-b9e7-4c25-8ce7-3b91996ccafd",
 		"name": "App Finança",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
 				}
 			},
 			"response": []
@@ -30,19 +34,106 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"data\": \"20-05-19\",\r\n\t\"ganho\": 18.00,\r\n\t\"contratoMiniIndice\": 1,\r\n\t\"contratoMiniDolar\": 0,\r\n\t\"iss\": 0,\r\n\t\"corretagem\": 0,\r\n\t\"taxaRegistroBmf\": 0.34,\r\n\t\"taxaBmf\": 0.16,\r\n\t\"taxaOutras\": 0\r\n}"
+					"raw": "{\r\n\t\"fkPessoa\": 1,\r\n\t\"dataTransacao\": \"20-05-19\",\r\n\t\"ganho\": 18.00,\r\n\t\"contratoMiniIndice\": 1,\r\n\t\"contratoMiniDolar\": 0,\r\n\t\"iss\": 0,\r\n\t\"corretagem\": 0,\r\n\t\"taxaRegistroBmf\": 0.34,\r\n\t\"taxaBmf\": 0.16,\r\n\t\"taxaOutras\": 0\r\n}"
 				},
 				"url": {
-					"raw": "localhost:3000/invest",
+					"raw": "localhost:3000/investment",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"invest"
+						"investment"
 					]
 				},
 				"description": "Enviando dados para a API"
+			},
+			"response": []
+		},
+		{
+			"name": "Relatorio de Investimento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/investment",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"investment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salva novo usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"tipoPessoa\": \"0\",\n  \"nome\": \"Maria\",\n  \"cpf\" : \"123.123.123-00\",\n  \"email\" : \"maria@email.br\",\n  \"password\" : \"123\",\n  \"corretora\" : \"dinheiro-fácil\",\n  \"dataNascimento\" : \"12-12-1977\",\n  \"tipoInvestimento\" : \"renda fixa\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exibe todos os usuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exibe usuário por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"10"
+					]
+				}
 			},
 			"response": []
 		}
