@@ -5,11 +5,19 @@
 **Fase Desenvolvimento**
 
 - [x] Estrutura Base da API
-- [x] Enviando dados para criação de novo usuário
-- [ ] Salvando o novo usuário do banco de dados 
-- [ ] Listando todos os usuários do banco
-- [ ] Excluindo usuário
-- [ ] Autenticando o usuário
+- [x] Criação dos principais EndPoints
+- [x] Receber dados para criação de novos usuários
+- [ ] Filtra novos usuario pelo CPF
+- [ ] Salvando usuário na base de dados 
+- [ ] ADM - Listando todos os usuários do banco
+- [ ] ADM - Adicionar opção para alterar usuário
+- [ ] ADM - Adicionar opção para bloquear usuário
+- [ ] ADM - Adicionar opção para excluindo usuário
+- [ ] Adicionando login
+- [ ] Adicionando recuperação de senha
+- [ ] Adicionando opção para alterar senha
+- [ ] Adicionando opção para alterar perfil
+- [ ] Adicionar token na API
 - [x] Enviando dados para transação de investimento
 - [ ] Salvando a transação no banco de dados
 - [ ] Listando todas as transações
