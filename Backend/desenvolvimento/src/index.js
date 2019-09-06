@@ -1,20 +1,21 @@
+// Dependencies
 const express = require('express');
-// const mongoose = require('mongoose');
-// const cors = require('cors');
+const bodyParser = require('body-parser');
+const api = require('./config/api.json');
+const bd = require('./database/verify');
 
-const routes = require('./routes');
+// Framework
+const app = express();
 
-const server = express();
+// Enabling JSON
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// mongoose.connect('mongodb+srv://sidnei:senha@cluster0-guiap.mongodb.net/omnistack8?retryWrites=true&w=majority', {
-//   useNewUrlParser: true
-// });
+// Checking Database connection
+bd.hasConection();
 
-// Liberando o App para ser acessado por qualquer IP.
-// server.use(cors());
-// habilitando json no express.
-server.use(express.json());
-// adicionando rotas de ./routes
-server.use(routes);
+// Enabling controllers
+require('./app/controllers/index')(app);
 
-server.listen(3000, () => console.log('Server Running: http://localhost:3000'));
+// Running Server
+app.listen(api.port, () => console.log(`Log: Server Running in http://${api.url}:${api.port}`));

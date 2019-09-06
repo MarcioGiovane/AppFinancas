@@ -6,136 +6,85 @@
 	},
 	"item": [
 		{
-			"name": "Principal",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000",
-					"host": [
-						"localhost"
-					],
-					"port": "3000"
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Transação Investimento",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\t\"fkPessoa\": 1,\r\n\t\"dataTransacao\": \"20-05-19\",\r\n\t\"ganho\": 18.00,\r\n\t\"contratoMiniIndice\": 1,\r\n\t\"contratoMiniDolar\": 0,\r\n\t\"iss\": 0,\r\n\t\"corretagem\": 0,\r\n\t\"taxaRegistroBmf\": 0.34,\r\n\t\"taxaBmf\": 0.16,\r\n\t\"taxaOutras\": 0\r\n}"
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Regina\",\n\t\"cpf\": \"25\",\n\t\"email\": \"jack@com.br\",\n\t\"password\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3000/investment",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"investment"
-					]
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/auth/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								""
+							]
+						}
+					},
+					"response": []
 				},
-				"description": "Enviando dados para a API"
-			},
-			"response": []
-		},
-		{
-			"name": "Relatorio de Investimento",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/investment",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"investment"
-					]
+				{
+					"name": "Authenticate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cpf\": \"29\",\n\t\"password\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/authenticate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Salva novo usuário",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"tipoPessoa\": \"0\",\n  \"nome\": \"Maria\",\n  \"cpf\" : \"123.123.123-00\",\n  \"email\" : \"maria@email.br\",\n  \"password\" : \"123\",\n  \"corretora\" : \"dinheiro-fácil\",\n  \"dataNascimento\" : \"12-12-1977\",\n  \"tipoInvestimento\" : \"renda fixa\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/user",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"user"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Exibe todos os usuários",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/user",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"user"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Exibe usuário por Id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/user/10",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"user",
-						"10"
-					]
-				}
-			},
-			"response": []
+			]
 		}
 	]
 }

@@ -2,6 +2,8 @@ DROP DATABASE IF EXISTS `appfinancesdb`;
 
 CREATE DATABASE `appfinancesdb`;
 
+ALTER DATABASE `appfinancesdb`CHARSET = UTF8 COLLATE = utf8_general_ci;
+
 USE `appfinancesdb`;
 
 DROP TABLE IF EXISTS `client`;
